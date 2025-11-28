@@ -282,20 +282,6 @@ deleteBtn.addEventListener("click", () => {
     }
 });
 
-function addImageToGallery(src){
-    const img = document.createElement("img");
-    img.src = src;
-    img.style.cursor = "pointer";
-
-    // Toggle selection on click
-    img.addEventListener("click", () => {
-        img.classList.toggle("selected"); // Adds/removes 'selected' class
-    });
-
-    gallery.appendChild(img);
-}
-
-
 document.getElementById("addBtn").addEventListener("click", function () {
     const url = document.getElementById("imgUrl").value.trim();
     if (!url) return;
